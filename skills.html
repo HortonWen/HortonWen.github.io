@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我做的 Skill · HortonWen</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">HortonWen</a>
+      <nav>
+        <a href="/robomaster.html">机甲大师</a>
+        <a href="/skills.html">Skill</a>
+        <a href="/tools/cxxy-campus-wifi.html">小工具</a>
+        <a href="/problems.html">问题记录</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>🛠️ 我做的 Skill</h1>
+    <p class="lede">把重复、繁琐的校园系统操作，沉淀成可以直接被 AI Agent 调用的技能。</p>
+
+    <div class="card">
+      <h2>cxxy-campus</h2>
+      <span class="badge">Python</span><span class="badge">仅标准库</span><span class="badge ok">已开源</span>
+      <p>一套针对校园系统的自动化工具，面向个人日常使用，AI 可以按技能说明直接调用。</p>
+      <h3>能做什么</h3>
+      <ul>
+        <li>官网通知与学科竞赛目录抓取 —— <code>scripts/website.py</code></li>
+        <li>学科竞赛管理系统：登录、列项目、查已报名、项目详情 —— <code>scripts/competition.py</code></li>
+        <li>数字校园门户登录、教务系统单点登录 —— <code>scripts/portal.py</code></li>
+      </ul>
+      <h3>实现要点</h3>
+      <ul>
+        <li>只用 Python 标准库（urllib + http.cookiejar），零第三方依赖</li>
+        <li>分别处理 GBK / UTF-8 页面编码，保持会话 Cookie 完成跨系统单点登录</li>
+        <li>账号密码只由使用方临时提供，仓库不保存任何凭证</li>
+      </ul>
+      <p class="repo-link">仓库：<a href="https://github.com/HortonWen/seu-cxxy-campus-skill">github.com/HortonWen/seu-cxxy-campus-skill</a></p>
+    </div>
+
+    <div class="note">
+      配套的 Windows 端校园网登录工具见 <a href="/tools/cxxy-campus-wifi.html">小工具页面</a>。
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 HortonWen · 仓库不含任何个人凭证</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>问题记录 · HortonWen</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">HortonWen</a>
+      <nav>
+        <a href="/robomaster.html">机甲大师</a>
+        <a href="/skills.html">Skill</a>
+        <a href="/tools/cxxy-campus-wifi.html">小工具</a>
+        <a href="/problems.html">问题记录</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>📋 问题记录</h1>
+    <p class="lede">把踩过的坑写下来：怎么解决的，以及哪些还没解决、在等什么。所有条目都不包含账号、密码或令牌。</p>
+
+    <h2>已解决</h2>
+
+    <div class="card">
+      <h3>火山引擎 ve CLI 安装失败 <span class="badge ok">已解决</span></h3>
+      <p><strong>现象：</strong>Windows 上安装 <code>@volcengine/cli</code> 时，解压步骤报错 <code>Expand-Archive</code> 命令所在模块无法加载。</p>
+      <p><strong>原因：</strong>Codex 运行环境自带的 PowerShell 模块目录里有一份新版压缩模块，遮蔽了 Windows 自带的模块，导致自动加载失败。</p>
+      <p><strong>解法：</strong>安装前把 <code>PSModulePath</code> 指向系统模块目录，再重装即可成功。</p>
+    </div>
+
+    <div class="card">
+      <h3>GitHub 推送连接被重置 <span class="badge ok">已解决</span></h3>
+      <p><strong>现象：</strong><code>git push</code> 到 github.com 时，TCP 已建立但请求被对端重置，<code>Recv failure: Connection was reset</code>。</p>
+      <p><strong>解法：</strong>改用 GitHub 的 SSH 443 通道（<code>ssh.github.com:443</code>），配一把专用 SSH 密钥后推送恢复正常。</p>
+    </div>
+
+    <h2>未解决 / 待处理</h2>
+
+    <div class="card">
+      <h3>arkcli 的 update_execution_boundary 拦截 <span class="badge bad">未解决</span></h3>
+      <p><strong>现象：</strong>arkcli 执行业务命令前自检失败：Windows 文件句柄解析到应用私有目录里的同一份硬链接文件，而不是 npm 全局目录，命令被拦下。</p>
+      <p><strong>已尝试：</strong>关闭自动更新（update.mode=disabled）、直接调用 exe、核对路径，均未绕开；判断与该应用的目录虚拟化有关。</p>
+      <p><strong>待办：</strong>找到官方对“非规范安装路径”的放行方式，或等新版本修复。</p>
+    </div>
+
+    <div class="card">
+      <h3>ve 技能需要火山引擎 AK/SK <span class="badge warn">未解决</span></h3>
+      <p><strong>现状：</strong>ve 命令行与技能已装好，但身份检查返回“未配置登录凭证”。方舟的 ARK API Key 与 ve 需要的火山主账号 AK/SK 不是同一套凭证，不能通用。</p>
+      <p><strong>待办：</strong>提供 AK/SK 或走浏览器登录后才能继续。</p>
+    </div>
+
+    <div class="card">
+      <h3>校园网自动登录接口待实测 <span class="badge warn">待验证</span></h3>
+      <p><strong>现状：</strong>登录工具按学校公开指南（认证网关、触发地址）与常见的 Dr.COM 认证方式实现，但编写环境不在校园网内，无法实网验证。</p>
+      <p><strong>兜底：</strong>无论自动登录是否成功，工具都会保证把认证页弹出来。</p>
+      <p><strong>待办：</strong>在校园环境实测一次，把卡住时的日志发回来再调整。</p>
+    </div>
+
+    <div class="card">
+      <h3>GitHub API 间歇性 SSL 中断 <span class="badge warn">未定位根因</span></h3>
+      <p><strong>现象：</strong>api.github.com 偶发 <code>SSL connection could not be established</code> 或 <code>unexpected EOF</code>，重试后通常恢复。</p>
+      <p><strong>临时对策：</strong>所有脚本加重试；根因未明，待观察网络环境变化。</p>
+    </div>
+
+    <div class="note">
+      如果你在复现这些问题时发现了新线索，欢迎到对应 GitHub 仓库提 Issue。
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 HortonWen · 持续记录，持续更新</div>
+  </footer>
+</body>
+</html>

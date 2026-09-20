@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>校园网登录工具 · HortonWen</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">HortonWen</a>
+      <nav>
+        <a href="/robomaster.html">机甲大师</a>
+        <a href="/skills.html">Skill</a>
+        <a href="/tools/cxxy-campus-wifi.html">小工具</a>
+        <a href="/problems.html">问题记录</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>🧰 校园网一键连接 / 自动登录</h1>
+    <p class="lede">解决 Windows 电脑连上 Student_CX 后不弹认证页、每次都要手动输账号的问题。</p>
+
+    <a class="btn" href="https://github.com/HortonWen/cxxy-campus-wifi">查看 GitHub 仓库</a>
+
+    <div class="card">
+      <h2>功能</h2>
+      <ul>
+        <li>一键连接无线信号，并在本机没有配置时自动创建无线配置</li>
+        <li>等待认证网关就绪，先自动提交登录表单，成功后直接上网</li>
+        <li>自动登录失败时，自动弹出认证页面，手动输一次也能用</li>
+        <li>单独的「只打开认证页」「检查网络状态」「自助服务」入口</li>
+        <li>可选开机自启：后台尝试连接并登录</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>密码安全</h2>
+      <p>默认不保存密码，每次手动输入。只有勾选「本机加密保存」后，才会用 Windows 账户级加密（DPAPI）存到本机，仅当前登录账户能解密，不写任何明文文件。</p>
+    </div>
+
+    <div class="card">
+      <h2>使用</h2>
+      <ul>
+        <li>双击 <code>启动-成贤校园网登录.bat</code> 打开图形界面</li>
+        <li>填入账号密码、选择出口线路，点「连接并自动登录」</li>
+        <li>想开机自启：先保存密码，再双击 <code>创建开机自启.bat</code></li>
+      </ul>
+    </div>
+
+    <div class="note">
+      当前状态：工具已开源可用；自动登录接口按学校公开资料编写，尚未在校园实网完整验证，详见 <a href="/problems.html">问题记录</a>。
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2026 HortonWen · 工具不含任何个人账号信息</div>
+  </footer>
+</body>
+</html>
