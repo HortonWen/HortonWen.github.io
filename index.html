@@ -23,24 +23,71 @@
     <h1>你好，我是 HortonWen</h1>
     <p class="lede">这里记录我折腾机甲大师、校园系统自动化和各种小工具的过程：做了什么、怎么做的、踩过哪些坑，以及哪些问题还悬而未决。</p>
 
+    <h2>🤖 机甲大师开源列表</h2>
+    <p>我维护的 RoboMaster 开源资源目录，按官方 / 公司 / 社区 / 机械 / 战队 / 个人 / 论坛分类，只整理、不排名。</p>
+    <table>
+      <tr><th>指标</th><th>数值</th><th>指标</th><th>数值</th></tr>
+      <tr><td>🏫 收录战队</td><td>82</td><td>🟢 新手友好</td><td>39</td></tr>
+      <tr><td>👤 个人开发者</td><td>25</td><td>🔵 成熟项目</td><td>67</td></tr>
+      <tr><td>📦 仓库总数</td><td>387</td><td>—</td><td>—</td></tr>
+    </table>
+    <ul>
+      <li><a href="https://github.com/chenjunnn/rm_vision">chenjunnn/rm_vision</a> — 视觉 ROS2 框架</li>
+      <li><a href="https://github.com/dji-sdk/RoboMaster-SDK">dji-sdk/RoboMaster-SDK</a> — DJI RoboMaster Python SDK</li>
+      <li><a href="https://github.com/HNUYueLuRM/basic_framework">HNUYueLuRM/basic_framework</a> — 电控开发框架</li>
+      <li><a href="https://github.com/TongjiSuperPower/sp_vision_25">TongjiSuperPower/sp_vision_25</a> — 同济 SuperPower 25 赛季视觉</li>
+      <li><a href="https://github.com/SMBU-PolarBear-Robotics-Team/pb2025_sentry_nav">SMBU-PolarBear-Robotics-Team/pb2025_sentry_nav</a> — 哨兵导航 Sim2Real</li>
+      <li><a href="https://github.com/zzt-180/sentry_planning">zzt-180/sentry_planning</a> — 哈工大 2024 哨兵导航规划</li>
+    </ul>
+    <a class="btn" href="/robomaster.html">查看完整介绍</a>
+    <a class="btn ghost" href="https://hortonwen.github.io/rm-open-source-leaderboard/">打开在线目录</a>
+
+    <h2>🛠️ 我做的 Skill</h2>
+    <div class="card">
+      <h3>cxxy-campus</h3>
+      <span class="badge">Python</span><span class="badge">仅标准库</span><span class="badge ok">已开源</span>
+      <p>把校园系统的重复操作做成 AI 可调用的技能：官网通知与竞赛目录、学科竞赛系统（登录 / 列项目 / 查已报名）、数字门户登录与教务系统单点登录。</p>
+      <ul>
+        <li><code>python scripts/website.py notices</code> —— 学生事务 / 通知公告列表</li>
+        <li><code>python scripts/competition.py list USER PWD</code> —— 列出可报名项目</li>
+        <li><code>python scripts/portal.py sso-jwfw USER PWD</code> —— 单点登录到师生服务端</li>
+      </ul>
+      <a class="btn" href="/skills.html">查看 Skill 详情</a>
+      <a class="btn ghost" href="https://github.com/HortonWen/seu-cxxy-campus-skill">GitHub 仓库</a>
+    </div>
+
+    <h2>🧰 小工具</h2>
     <div class="cards">
-      <a class="card" href="/robomaster.html">
-        <h3>🤖 机甲大师开源列表</h3>
-        <p>我维护的 RoboMaster 开源资源目录：82 支战队、387 个仓库，按官方 / 公司 / 社区 / 机械 / 战队 / 个人 / 论坛分类，持续更新。</p>
+      <a class="card" href="/tools/cxxy-campus-wifi.html">
+        <h3>校园网一键连接 / 自动登录</h3>
+        <p>解决 Windows 连上 Student_CX 不弹认证页的问题：自动连网、自动登录、失败自动弹页面，支持开机自启，密码可选本机加密保存。</p>
+        <span class="badge ok">已开源</span>
       </a>
-      <a class="card" href="/skills.html">
-        <h3>🛠️ 我做的 Skill</h3>
-        <p>把校园系统的重复操作沉淀成 AI 可调用的技能，纯 Python 标准库，零第三方依赖，凭证不落盘。</p>
-      </a>
-      <a class="card" href="/tools/">
-        <h3>🧰 小工具</h3>
-        <p>Windows 端的小工具合集，每个工具单独一个页面，写清用途、用法和已知限制。</p>
-      </a>
-      <a class="card" href="/problems.html">
-        <h3>📋 问题记录</h3>
-        <p>踩坑笔记：环境、现象、排查过程、结论与待办，已解决和未解决的分开记录。</p>
+      <a class="card" href="https://github.com/HortonWen/rm-open-source-leaderboard">
+        <h3>机甲大师开源资源目录</h3>
+        <p>自动抓取 GitHub / Gitee / RM 论坛生成分类目录的站点，纯静态、打开即用。</p>
+        <span class="badge ok">已开源</span>
       </a>
     </div>
+    <p><a href="/tools/">进入小工具索引页 →</a></p>
+
+    <h2>📋 问题记录</h2>
+    <div class="card">
+      <h3>已解决</h3>
+      <ul>
+        <li>火山引擎 ve CLI 安装失败 —— 模块搜索路径遮蔽，修正 PSModulePath 后解决</li>
+        <li>GitHub 推送连接被重置 —— 确认当时未开代理；SSH 443 作为备用通道保留</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>未解决 / 待处理</h3>
+      <ul>
+        <li>arkcli 的 update_execution_boundary 拦截 —— 与应用目录虚拟化有关，等官方修复</li>
+        <li>ve 技能缺少火山引擎 AK/SK —— 与方舟 API Key 不是同一套凭证</li>
+        <li>校园网自动登录接口待实网验证 —— 失败会自动兜底弹认证页</li>
+      </ul>
+    </div>
+    <a class="btn" href="/problems.html">查看完整问题记录</a>
 
     <h2>最近更新</h2>
     <div class="card">
