@@ -13,7 +13,7 @@
       <nav>
         <a href="/robomaster.html">机甲大师</a>
         <a href="/skills.html">Skill</a>
-        <a href="/tools/cxxy-campus-wifi.html">小工具</a>
+        <a href="/tools/">小工具</a>
         <a href="/problems.html">问题记录</a>
       </nav>
     </div>
@@ -21,49 +21,49 @@
 
   <main class="container">
     <h1>📋 问题记录</h1>
-    <p class="lede">把踩过的坑写下来：怎么解决的，以及哪些还没解决、在等什么。所有条目都不包含账号、密码或令牌。</p>
+    <p class="lede">踩坑笔记：环境、现象、排查、结论、待办，分开记录已解决和未解决的问题。所有条目都不包含账号、密码或令牌。</p>
 
     <h2>已解决</h2>
 
     <div class="card">
       <h3>火山引擎 ve CLI 安装失败 <span class="badge ok">已解决</span></h3>
-      <p><strong>现象：</strong>Windows 上安装 <code>@volcengine/cli</code> 时，解压步骤报错 <code>Expand-Archive</code> 命令所在模块无法加载。</p>
-      <p><strong>原因：</strong>Codex 运行环境自带的 PowerShell 模块目录里有一份新版压缩模块，遮蔽了 Windows 自带的模块，导致自动加载失败。</p>
-      <p><strong>解法：</strong>安装前把 <code>PSModulePath</code> 指向系统模块目录，再重装即可成功。</p>
+      <p><strong>环境：</strong>Windows 10/11，Node 24，npm 11，安装 <code>@volcengine/cli</code> 时触发解压脚本。</p>
+      <p><strong>现象：</strong>安装报错 <code>Expand-Archive : The 'Expand-Archive' command was found in the module 'Microsoft.PowerShell.Archive', but the module could not be loaded</code>，CLI 二进制解压失败，包整体回滚。</p>
+      <p><strong>排查：</strong>列出 <code>PSModulePath</code> 后发现，Codex 运行环境自带的 PowerShell 模块目录里有一份 <code>Microsoft.PowerShell.Archive 1.2.5</code>，位置排在系统模块目录之前；Windows PowerShell 自动加载时选中了这份与 5.1 不兼容的版本，加载失败后没有继续回退到系统目录里的版本。</p>
+      <p><strong>解法：</strong>安装前把 <code>PSModulePath</code> 指向系统模块目录（<code>C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules</code>），再执行安装，一次成功，随后技能也正常装上。</p>
+      <p><strong>结论：</strong>本质是模块搜索路径的遮蔽问题，不是网络或权限问题。</p>
     </div>
 
     <div class="card">
       <h3>GitHub 推送连接被重置 <span class="badge ok">已解决</span></h3>
-      <p><strong>现象：</strong><code>git push</code> 到 github.com 时，TCP 已建立但请求被对端重置，<code>Recv failure: Connection was reset</code>。</p>
-      <p><strong>解法：</strong>改用 GitHub 的 SSH 443 通道（<code>ssh.github.com:443</code>），配一把专用 SSH 密钥后推送恢复正常。</p>
+      <p><strong>现象：</strong><code>git push</code> 到 github.com 时，TCP 握手和 TLS 都能建立，但请求发出后约 25 秒被对端重置，报 <code>Recv failure: Connection was reset</code>；网页版和 API 当时也时好时坏。</p>
+      <p><strong>排查：</strong>换多个 GitHub 出口 IP、强制 HTTP/1.1、调大 postBuffer 都不行，判断是链路层被掐断，而不是仓库或令牌问题。</p>
+      <p><strong>当时的方案：</strong>改用 GitHub 的 SSH 443 通道（<code>ssh.github.com:443</code>），配一把专用 SSH 密钥，推送恢复。</p>
+      <p><strong>补充：</strong>后来确认当时只是本地代理没开；代理开启后直连、网页和 API 都恢复正常。SSH 443 作为备用通道保留。</p>
     </div>
 
     <h2>未解决 / 待处理</h2>
 
     <div class="card">
       <h3>arkcli 的 update_execution_boundary 拦截 <span class="badge bad">未解决</span></h3>
-      <p><strong>现象：</strong>arkcli 执行业务命令前自检失败：Windows 文件句柄解析到应用私有目录里的同一份硬链接文件，而不是 npm 全局目录，命令被拦下。</p>
-      <p><strong>已尝试：</strong>关闭自动更新（update.mode=disabled）、直接调用 exe、核对路径，均未绕开；判断与该应用的目录虚拟化有关。</p>
-      <p><strong>待办：</strong>找到官方对“非规范安装路径”的放行方式，或等新版本修复。</p>
+      <p><strong>环境：</strong>在 Codex 桌面应用内运行 <code>@volcengine/ark-cli</code>。</p>
+      <p><strong>现象：</strong>任意业务命令（包括 <code>doctor</code>）执行前自检失败，返回 <code>update_execution_boundary</code>：Windows 文件句柄解析到应用私有目录里的硬链接文件，而不是 npm 全局目录，命令被拦下。</p>
+      <p><strong>已尝试：</strong>直接调用 exe、关闭自动更新（<code>update.mode=disabled</code>）、核对硬链接与路径，均未绕开；判断与应用对用户目录的虚拟化有关。</p>
+      <p><strong>待办：</strong>找官方对「非规范安装路径」的放行方式，或等新版本修复后重试。</p>
     </div>
 
     <div class="card">
       <h3>ve 技能需要火山引擎 AK/SK <span class="badge warn">未解决</span></h3>
-      <p><strong>现状：</strong>ve 命令行与技能已装好，但身份检查返回“未配置登录凭证”。方舟的 ARK API Key 与 ve 需要的火山主账号 AK/SK 不是同一套凭证，不能通用。</p>
-      <p><strong>待办：</strong>提供 AK/SK 或走浏览器登录后才能继续。</p>
+      <p><strong>现状：</strong><code>ve</code> 命令行和技能已装好，但初始化身份检查返回「未配置登录凭证」。</p>
+      <p><strong>原因：</strong>方舟的 ARK API Key 与 ve 需要的火山主账号 AccessKey / SecretKey 不是同一套凭证，不能通用；ve 支持 AK/SK 配置、浏览器扫码登录和 SSO 三种方式。</p>
+      <p><strong>待办：</strong>提供 AK/SK，或走一次浏览器登录后即可继续。</p>
     </div>
 
     <div class="card">
       <h3>校园网自动登录接口待实测 <span class="badge warn">待验证</span></h3>
-      <p><strong>现状：</strong>登录工具按学校公开指南（认证网关、触发地址）与常见的 Dr.COM 认证方式实现，但编写环境不在校园网内，无法实网验证。</p>
-      <p><strong>兜底：</strong>无论自动登录是否成功，工具都会保证把认证页弹出来。</p>
-      <p><strong>待办：</strong>在校园环境实测一次，把卡住时的日志发回来再调整。</p>
-    </div>
-
-    <div class="card">
-      <h3>GitHub API 间歇性 SSL 中断 <span class="badge warn">未定位根因</span></h3>
-      <p><strong>现象：</strong>api.github.com 偶发 <code>SSL connection could not be established</code> 或 <code>unexpected EOF</code>，重试后通常恢复。</p>
-      <p><strong>临时对策：</strong>所有脚本加重试；根因未明，待观察网络环境变化。</p>
+      <p><strong>现状：</strong>校园网登录工具按学校公开指南（认证网关、触发地址）和常见的 Dr.COM 认证方式实现，但编写环境不在校园网内，无法实网验证接口字段。</p>
+      <p><strong>兜底：</strong>无论自动登录是否成功，工具都会保证把认证页弹出来，不影响手动登录。</p>
+      <p><strong>待办：</strong>在校园环境实测一次；若自动登录失败，把图形界面日志里卡住的那行发回来，再按真实页面结构调整。</p>
     </div>
 
     <div class="note">

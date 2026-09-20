@@ -13,7 +13,7 @@
       <nav>
         <a href="/robomaster.html">机甲大师</a>
         <a href="/skills.html">Skill</a>
-        <a href="/tools/cxxy-campus-wifi.html">小工具</a>
+        <a href="/tools/">小工具</a>
         <a href="/problems.html">问题记录</a>
       </nav>
     </div>
@@ -21,24 +21,46 @@
 
   <main class="container">
     <h1>🛠️ 我做的 Skill</h1>
-    <p class="lede">把重复、繁琐的校园系统操作，沉淀成可以直接被 AI Agent 调用的技能。</p>
+    <p class="lede">把校园系统里那些重复、繁琐的操作沉淀成技能，让 AI Agent 能按说明直接调用，也方便自己随时复用。</p>
 
     <div class="card">
       <h2>cxxy-campus</h2>
-      <span class="badge">Python</span><span class="badge">仅标准库</span><span class="badge ok">已开源</span>
-      <p>一套针对校园系统的自动化工具，面向个人日常使用，AI 可以按技能说明直接调用。</p>
+      <span class="badge">Python</span><span class="badge">仅标准库</span><span class="badge">零第三方依赖</span><span class="badge ok">已开源</span>
+      <p>一套针对校园系统的自动化工具，覆盖官网、学科竞赛系统和数字校园门户三个入口，面向个人日常使用。</p>
+
+      <h3>背景</h3>
+      <p>查通知、看竞赛目录、登录竞赛系统报名、登门户再跳教务查课表成绩，这些操作每个学期要重复很多次，而且竞赛系统还是 GBK 编码的老页面。于是把登录流程和常用页面整理成脚本，再写成 AI 技能，之后一句话就能完成。</p>
+
       <h3>能做什么</h3>
       <ul>
-        <li>官网通知与学科竞赛目录抓取 —— <code>scripts/website.py</code></li>
-        <li>学科竞赛管理系统：登录、列项目、查已报名、项目详情 —— <code>scripts/competition.py</code></li>
-        <li>数字校园门户登录、教务系统单点登录 —— <code>scripts/portal.py</code></li>
+        <li><strong>官网信息</strong>：<code>python scripts/website.py notices</code> 拉学生事务 / 通知公告列表；<code>search 关键词</code> 搜索；<code>catalog</code> 看学科竞赛目录摘要</li>
+        <li><strong>学科竞赛系统</strong>：<code>competition.py login USER PWD</code> 测试登录；<code>list</code> 列出可报名项目；<code>registered</code> 查已报名项目；<code>detail ITEMNO</code> 看项目详情；<code>public-list</code> 无需登录看全部项目</li>
+        <li><strong>数字校园门户</strong>：<code>portal.py login USER PWD</code> 登录并打印身份；<code>profile</code> 首页身份信息；<code>sso-jw</code> / <code>sso-jwfw</code> 单点登录到新旧教务系统</li>
       </ul>
+
       <h3>实现要点</h3>
       <ul>
-        <li>只用 Python 标准库（urllib + http.cookiejar），零第三方依赖</li>
-        <li>分别处理 GBK / UTF-8 页面编码，保持会话 Cookie 完成跨系统单点登录</li>
-        <li>账号密码只由使用方临时提供，仓库不保存任何凭证</li>
+        <li>只用 Python 标准库（<code>urllib</code> + <code>http.cookiejar</code>），不装任何第三方包</li>
+        <li>竞赛系统页面是 GBK、门户 / 教务是 UTF-8，脚本分别处理，避免乱码</li>
+        <li>竞赛系统登录要带 <code>__VIEWSTATE</code> 等隐藏字段，脚本自动先 GET 再 POST，保持会话</li>
+        <li>门户登录成功后拿到 <code>iPlanetDirectoryPro</code> Cookie，再带去教务系统完成单点登录</li>
+        <li>密码可以用 <code>-</code> 占位，脚本从标准输入读取，避免密码留在命令行历史里</li>
       </ul>
+
+      <h3>安全约定</h3>
+      <ul>
+        <li>账号密码只由使用方临时提供，仓库不保存任何凭证</li>
+        <li>只操作用户本人的账号，不为其他人报名</li>
+        <li>报名是真实写入操作，提交前会先把「比赛 + 队长 + 队员 + 作品名」念给用户确认</li>
+      </ul>
+
+      <h3>文件结构</h3>
+      <ul>
+        <li><code>SKILL.md</code> —— 技能说明，AI 按它来调用</li>
+        <li><code>references/endpoints.md</code> —— 各系统接口与登录流程备忘</li>
+        <li><code>scripts/website.py</code> / <code>competition.py</code> / <code>portal.py</code> —— 三个入口脚本</li>
+      </ul>
+
       <p class="repo-link">仓库：<a href="https://github.com/HortonWen/seu-cxxy-campus-skill">github.com/HortonWen/seu-cxxy-campus-skill</a></p>
     </div>
 
