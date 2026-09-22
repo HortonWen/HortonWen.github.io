@@ -1,1 +1,27 @@
-PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkhvcnRvbldlbiBhdmF0YXIiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyYTRhOGYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMGQxYjJlIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNiZykiLz4KICA8ZyBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjIiPgogICAgPGxpbmUgeDE9IjAiIHkxPSIxMjgiIHgyPSI1MTIiIHkyPSIxMjgiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMjU2IiB4Mj0iNTEyIiB5Mj0iMjU2Ii8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjM4NCIgeDI9IjUxMiIgeTI9IjM4NCIvPgogICAgPGxpbmUgeDE9IjEyOCIgeTE9IjAiIHgyPSIxMjgiIHkyPSI1MTIiLz4KICAgIDxsaW5lIHgxPSIyNTYiIHkxPSIwIiB4Mj0iMjU2IiB5Mj0iNTEyIi8+CiAgICA8bGluZSB4MT0iMzg0IiB5MT0iMCIgeDI9IjM4NCIgeTI9IjUxMiIvPgogIDwvZz4KICA8bGluZSB4MT0iMjU2IiB5MT0iOTIiIHgyPSIyNTYiIHkyPSIxNTYiIHN0cm9rZT0iIzdlYTZmZiIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSI4MCIgcj0iMTQiIGZpbGw9IiM3ZWE2ZmYiLz4KICA8cmVjdCB4PSIxMjgiIHk9IjE1NiIgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyMjQiIHJ4PSIzMiIgZmlsbD0iIzFmNGZiMCIvPgogIDxyZWN0IHg9IjEyOCIgeT0iMTU2IiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjIyNCIgcng9IjMyIiBmaWxsPSJub25lIiBzdHJva2U9IiM0YTdkZTAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxyZWN0IHg9IjE2OCIgeT0iMjEyIiB3aWR0aD0iNTYiIGhlaWdodD0iNjYiIHJ4PSIxMCIgZmlsbD0iI2RmZjBmZiIvPgogIDxyZWN0IHg9IjI4OCIgeT0iMjEyIiB3aWR0aD0iNTYiIGhlaWdodD0iNjYiIHJ4PSIxMCIgZmlsbD0iI2RmZjBmZiIvPgogIDxyZWN0IHg9IjE4NCIgeT0iMjMwIiB3aWR0aD0iMjQiIGhlaWdodD0iMzAiIHJ4PSI2IiBmaWxsPSIjMjAzYTZiIi8+CiAgPHJlY3QgeD0iMzA0IiB5PSIyMzAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIzMCIgcng9IjYiIGZpbGw9IiMyMDNhNmIiLz4KICA8cmVjdCB4PSIyMTQiIHk9IjMyMiIgd2lkdGg9Ijg0IiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiM3ZWE2ZmYiLz4KICA8cmVjdCB4PSIyMTQiIHk9IjMyMiIgd2lkdGg9IjQyIiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiNkZmYwZmYiLz4KPC9zdmc+Cg==
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="HortonWen avatar">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a4a8f"/>
+      <stop offset="1" stop-color="#0d1b2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="2">
+    <line x1="0" y1="128" x2="512" y2="128"/>
+    <line x1="0" y1="256" x2="512" y2="256"/>
+    <line x1="0" y1="384" x2="512" y2="384"/>
+    <line x1="128" y1="0" x2="128" y2="512"/>
+    <line x1="256" y1="0" x2="256" y2="512"/>
+    <line x1="384" y1="0" x2="384" y2="512"/>
+  </g>
+  <line x1="256" y1="92" x2="256" y2="156" stroke="#7ea6ff" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="256" cy="80" r="14" fill="#7ea6ff"/>
+  <rect x="128" y="156" width="256" height="224" rx="32" fill="#1f4fb0"/>
+  <rect x="128" y="156" width="256" height="224" rx="32" fill="none" stroke="#4a7de0" stroke-width="4"/>
+  <rect x="168" y="212" width="56" height="66" rx="10" fill="#dff0ff"/>
+  <rect x="288" y="212" width="56" height="66" rx="10" fill="#dff0ff"/>
+  <rect x="184" y="230" width="24" height="30" rx="6" fill="#203a6b"/>
+  <rect x="304" y="230" width="24" height="30" rx="6" fill="#203a6b"/>
+  <rect x="214" y="322" width="84" height="20" rx="10" fill="#7ea6ff"/>
+  <rect x="214" y="322" width="42" height="20" rx="10" fill="#dff0ff"/>
+</svg>
