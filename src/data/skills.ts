@@ -79,7 +79,7 @@ export const skillsData: SkillItem[] = [
 	{
 		name: "MATLAB",
 		description: "矩阵运算、数据可视化、脚本编写、控制系统仿真基础。",
-		icon: "simple-icons:matlab",
+		icon: "material-symbols:functions-outline-rounded",
 		category: "tooling",
 		level: "beginner",
 	},
