@@ -45,4 +45,11 @@ export const musicTracks: readonly TrackDescriptor[] = [
 		source: "/assets/music/url/cl.mp3",
 		duration: 242,
 	},
+	{
+		id: "world-execute-me",
+		title: "world.execute(me);",
+		artist: "Mili",
+		cover: "assets/images/music/world-execute-me.jpg",
+		source: "/assets/music/url/world-execute-me.mp3",
+	},
 ];

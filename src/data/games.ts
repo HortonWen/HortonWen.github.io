@@ -48,4 +48,19 @@ export const gamesData: GameItem[] = [
 			"A blocky sandbox where you mine, craft and build across procedurally generated worlds. Survive the night, or just keep building — alone or with friends.",
 		link: "https://www.minecraft.net/",
 	},
+	{
+		id: "delta-force",
+		name: "三角洲行动",
+		developer: "Team Jade / 腾讯",
+		category: "action",
+		status: "playing",
+		cover: "assets/games/delta-force-hero.jpg",
+		icon: "material-symbols:target-outline-rounded",
+		platform: "PC",
+		year: "2024",
+		tags: ["FPS", "Tactical", "Extraction", "Warfare"],
+		description:
+			"近未来军事题材战术射击游戏，包含大规模战场（Havoc Warfare）与搜打撤（Operations）两种核心玩法，枪械改装自由度高。",
+		link: "https://www.deltaforcegame.com/cn/",
+	},
 ];
