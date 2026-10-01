@@ -143,6 +143,7 @@ const defaultNavBarConfig: NavBarConfig = {
 		LinkPresets.Archive,
 		LinkPresets.Categories,
 		LinkPresets.Tags,
+		LinkPresets.Friends,
 		LinkPresets.About,
 		LinkPresets.GitHub,
 	],
