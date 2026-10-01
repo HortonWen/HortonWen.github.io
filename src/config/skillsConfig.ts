@@ -1,36 +1,45 @@
 import type { SkillsConfig } from "@/types/skillsConfig";
 import { withUserConfig } from "../utils/config-overlay.ts";
 
-/**
- * 技能页行为与展示配置。
- *
- * 遵循「配置管行为，数据管内容」原则：
- * - enable：页面总开关；false 时导航入口同步隐藏，访问 /skills/ 跳转 404；
- * - categories：筛选分类清单（数组顺序即页面顶部 Chips 顺序）；
- * - disabledNames：可选被禁用的技能名称列表（例如 ["PHP"]）；
- *
- * 注：技能的具体内容数据（技能名称、熟练度等级、图标、描述等）请在 `src/data/skills.ts` 中维护。
- */
 export const skillsConfig: SkillsConfig = withUserConfig("skills", {
 	enable: true,
 	title: "$t:skills",
 	description: "$t:skillsBanner",
 	categories: [
 		{
-			key: "frontend",
-			label: "Frontend",
-			icon: "material-symbols:web-rounded",
+			key: "ai-agent",
+			label: "AI Agent",
+			icon: "material-symbols:smart-toy-outline-rounded",
 		},
 		{
-			key: "backend",
-			label: "Backend",
-			icon: "material-symbols:dns-rounded",
+			key: "language",
+			label: "编程语言",
+			icon: "material-symbols:code-outline-rounded",
+		},
+		{
+			key: "robotics",
+			label: "机器人",
+			icon: "material-symbols:smart-toy-outline-rounded",
+		},
+		{
+			key: "embedded",
+			label: "嵌入式",
+			icon: "material-symbols:memory-outline-rounded",
 		},
 		{
 			key: "tooling",
-			label: "Tooling",
+			label: "工具链",
 			icon: "material-symbols:construction-rounded",
 		},
+		{
+			key: "writing",
+			label: "写作",
+			icon: "material-symbols:edit-note-outline-rounded",
+		},
+		{
+			key: "frontend",
+			label: "前端",
+			icon: "material-symbols:web-rounded",
+		},
 	],
-	// disabledNames: [],
 });
