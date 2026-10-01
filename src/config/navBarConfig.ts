@@ -135,15 +135,38 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		external: true,
 		pageKey: "github",
 	},
+	RoboMaster: {
+		name: "机甲大师",
+		url: "/projects/",
+		icon: "material-symbols:sports-esports-outline-rounded",
+		pageKey: "projects",
+	},
 };
 
 const defaultNavBarConfig: NavBarConfig = {
 	links: [
 		LinkPresets.Home,
 		LinkPresets.Archive,
+		LinkPresets.RoboMaster,
 		LinkPresets.Categories,
 		LinkPresets.Tags,
 		LinkPresets.Friends,
+		LinkPresets.Compass,
+		LinkPresets.Skills,
+		{
+			name: i18n(I18nKey.more),
+			icon: "material-symbols:apps-rounded",
+			children: [
+				LinkPresets.Moments,
+				LinkPresets.Anime,
+				LinkPresets.Albums,
+				LinkPresets.Timeline,
+				LinkPresets.Projects,
+				LinkPresets.Devices,
+				LinkPresets.Games,
+				LinkPresets.Series,
+			],
+		},
 		LinkPresets.About,
 		LinkPresets.GitHub,
 	],

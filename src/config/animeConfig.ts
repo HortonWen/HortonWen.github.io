@@ -40,7 +40,7 @@ import { withUserConfig } from "../utils/config-overlay.ts";
  */
 export const animeConfig: AnimeConfig = withUserConfig("anime", {
 	/** 是否启用番剧页；false 时导航入口同步隐藏，访问 /anime/ 跳转 404 */
-	enable: false,
+	enable: true,
 	title: "$t:anime",
 	description: "$t:animeBanner",
 
@@ -60,7 +60,7 @@ export const animeConfig: AnimeConfig = withUserConfig("anime", {
 	/** 外部提供方配置 */
 	providers: {
 		bangumi: {
-			enable: false,
+			enable: true,
 			userId: "", // 填入你的 Bangumi 数字 UID 或公开用户名（测试可填 "sai"）
 			request: {
 				pageSize: 50,
@@ -69,7 +69,7 @@ export const animeConfig: AnimeConfig = withUserConfig("anime", {
 			},
 		},
 		bilibili: {
-			enable: false,
+			enable: true,
 			vmid: "", // 填入你的 B 站公开 UID
 			sessdataEnv: "BILI_SESSDATA",
 			cover: {
