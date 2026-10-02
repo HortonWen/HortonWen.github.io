@@ -3,7 +3,7 @@ title: "C 语言 void 空指针完整用法"
 published: 2026-07-21
 description: "从 void* 的本质和核心特性讲起，覆盖通用函数参数、内存操作、qsort 排序、动态内存等五大场景，附完整示例和易错点总结。"
 tags: [void指针, 通用指针, C语言, memcpy, qsort]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

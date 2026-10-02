@@ -3,7 +3,7 @@ title: "MATLAB 基础语法与矩阵计算"
 published: 2026-08-11
 description: "系统梳理 MATLAB 的基础语法结构与矩阵计算操作，涵盖变量、控制流、函数编写、矩阵创建与运算、线性方程组求解及性能优化技巧。"
 tags: [MATLAB, 基础语法, 矩阵运算, 线性方程组, 向量化, 数据可视化]
-category: MATLAB
+category: 编程语言
 draft: false
 ---
 

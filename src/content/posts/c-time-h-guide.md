@@ -3,7 +3,7 @@ title: "C 语言 time.h 头文件超全使用教程"
 published: 2026-07-21
 description: "从核心数据类型到时间获取、格式化输出、程序计时和时间运算，系统讲解 C 语言 time.h 的全部用法，附万能模板和高频踩坑总结。"
 tags: [time.h, C语言, 时间戳, strftime, clock]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

@@ -2,8 +2,8 @@
 title: "在 Markdown 中编辑 LaTeX 数学公式"
 published: 2026-02-27
 description: "完整指南：在 Markdown 中嵌入 LaTeX 数学公式，涵盖行内与块级公式、常用符号语法、矩阵、分段函数及辅助工具推荐。"
-tags: [Markdown, LaTeX, 数学公式, MathJax, 学术写作]
-category: Markdown
+tags: [Markdown, LaTeX, 数学公式, MathJax]
+category: 编程语言
 draft: false
 ---
 

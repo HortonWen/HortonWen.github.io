@@ -3,7 +3,7 @@ title: "LaTeX 文章基本框架：导言区与正文区详解"
 published: 2026-02-27
 description: "详解 LaTeX 文章的两大核心组成部分——导言区和正文区，涵盖文档类选择、宏包加载、章节结构和常用元素，附完整示例框架。"
 tags: [LaTeX, 文档结构, 导言区, 宏包, 排版框架]
-category: LaTeX
+category: 编程语言
 draft: false
 ---
 

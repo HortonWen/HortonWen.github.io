@@ -3,7 +3,7 @@ title: "C++ 课程设计核心代码解析（二）：集成文件 IO 的最终�
 published: 2026-04-04
 description: "展示 Rolex 职位申请系统最终版本的完整代码，在上一篇基础上集成了 FileIO 模块，实现程序启动自动加载、退出自动保存的数据持久化功能。"
 tags: [课程设计, C++, 文件IO, 模块化, CMake]
-category: C++
+category: 编程语言
 draft: false
 ---
 

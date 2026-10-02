@@ -3,7 +3,7 @@ title: "WSL 安装 Ubuntu 20.04 LTS 完整指南"
 published: 2026-07-06
 description: "在 Windows 上通过 WSL 安装 Ubuntu 20.04 LTS 的三种方案及常见问题解决，涵盖一键命令、微软商店和手动分步安装。"
 tags: [WSL, Ubuntu, Windows, 开发环境, Linux]
-category: ROS
+category: 机甲大师
 draft: false
 ---
 

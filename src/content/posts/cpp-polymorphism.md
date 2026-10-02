@@ -3,7 +3,7 @@ title: "C++ 多态详解：原理、实战案例与抽象类"
 published: 2026-02-27
 description: "从静态多态到动态多态，深入讲解 C++ 多态的实现条件与底层 vtable 机制，通过计算器案例演示多态的实际应用，并介绍纯虚函数与抽象类的设计价值。"
 tags: [多态, 虚函数, vtable, 抽象类, 纯虚函数]
-category: C++
+category: 编程语言
 draft: false
 ---
 

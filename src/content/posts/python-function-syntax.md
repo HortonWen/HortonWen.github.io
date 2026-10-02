@@ -3,7 +3,7 @@ title: "Python 函数语法详解"
 published: 2026-02-28
 description: "深入讲解 Python 函数的定义与调用、五种参数类型、返回值机制、变量作用域规则以及 Lambda 和递归等进阶特性。"
 tags: [Python, 函数, 参数传递, Lambda, 递归, 作用域]
-category: Python
+category: 编程语言
 draft: false
 ---
 

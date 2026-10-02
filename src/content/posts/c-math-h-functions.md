@@ -3,7 +3,7 @@ title: "C 语言 math.h 常用函数完整用法"
 published: 2026-07-21
 description: "系统梳理 C 语言 math.h 头文件中的常量定义、三角函数、幂与对数、取整绝对值等常用函数，附完整示例代码和常见踩坑点。"
 tags: [math.h, 数学函数, C语言, 三角函数, 取整]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

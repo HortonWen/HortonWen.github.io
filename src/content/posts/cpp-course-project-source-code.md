@@ -3,7 +3,7 @@ title: "C++ 课程设计程序代码实录"
 published: 2026-04-04
 description: "完整收录 Rolex 职位申请系统的两个历史版本源代码：初版单文件实现与早期多文件重构版本，保留原始代码风貌，便于对照学习演进过程。"
 tags: [课程设计, C++, 源代码, 结构体, 排序算法]
-category: C++
+category: 编程语言
 draft: false
 ---
 

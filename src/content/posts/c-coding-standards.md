@@ -3,7 +3,7 @@ title: "C 语言大厂通用代码规范"
 published: 2026-07-23
 description: "从文件命名、注释规范到数据类型、宏定义、函数设计和分支控制，系统整理适用于嵌入式和后端 C 开发的大厂级代码规范。"
 tags: [代码规范, C语言, 命名规范, 嵌入式, 代码风格]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

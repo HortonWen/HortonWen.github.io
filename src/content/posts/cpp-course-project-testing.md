@@ -3,7 +3,7 @@ title: "C++ 课程设计测试记录与测试用例"
 published: 2026-04-14
 description: "系统梳理 Rolex 职位申请系统的测试方案，涵盖功能测试、边界值测试、异常处理测试，以及基于 Tmark/Tinform/Tmarks 结构体的分模块测试用例。"
 tags: [课程设计, C++, 测试用例, 边界值, 结构体]
-category: C++
+category: 编程语言
 draft: false
 ---
 

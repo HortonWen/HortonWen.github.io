@@ -3,7 +3,7 @@ title: "Markdown 语法基础：从零掌握文档排版"
 published: 2026-02-24
 description: "系统梳理 Markdown 基础语法，涵盖标题、列表、表格、代码块、链接与图片等核心元素，帮助初学者快速上手文档排版。"
 tags: [Markdown, 基础语法, 排版, 写作工具]
-category: Markdown
+category: 编程语言
 draft: false
 ---
 

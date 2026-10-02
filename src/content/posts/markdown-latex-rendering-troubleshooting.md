@@ -3,7 +3,7 @@ title: "Markdown 中 LaTeX 公式渲染问题排查实录"
 published: 2026-02-27
 description: "记录在 Markdown 编辑器中使用 LaTeX 公式时遇到的三类典型渲染失败问题：换行失效、集合符号不识别、oiint 命令报错，并给出可复现的解决方案。"
 tags: [Markdown, LaTeX, MathJax, 渲染问题, 排错]
-category: Markdown
+category: 编程语言
 draft: false
 ---
 

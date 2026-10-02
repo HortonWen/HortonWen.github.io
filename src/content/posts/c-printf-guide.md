@@ -3,7 +3,7 @@ title: "C 语言 printf 格式化输出完全指南"
 published: 2026-07-21
 description: "系统讲解 C 语言 printf 的全部格式控制符，包括基础类型、长短整型适配、浮点扩展、对齐宽度精度修饰符，附完整示例与对照表。"
 tags: [printf, 格式化输出, 占位符, C语言, stdio]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "ROS HelloWorld 实现简介：工作空间与功能包"
 published: 2026-07-04
 description: "从零创建 ROS 工作空间和功能包的通用流程，为后续编写 C++ 或 Python 节点打下基础。"
 tags: [ROS, catkin, 工作空间, 功能包, HelloWorld]
-category: ROS
+category: 机甲大师
 draft: false
 ---
 

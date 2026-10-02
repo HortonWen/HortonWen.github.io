@@ -3,7 +3,7 @@ title: "C++ STL 入门：六大组件与设计思想"
 published: 2026-02-27
 description: "系统介绍 C++ 标准模板库的六大核心组件——容器、算法、迭代器、函数对象、适配器和分配器，解析泛型编程思想和三大组件的协同工作机制。"
 tags: [STL, 容器, 算法, 迭代器, 泛型编程]
-category: C++
+category: 编程语言
 draft: false
 ---
 

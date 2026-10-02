@@ -3,7 +3,7 @@ title: "在 Markdown 中用 Mermaid 画流程图"
 published: 2026-02-24
 description: "介绍如何用 Mermaid 语法在 Markdown 中绘制专业流程图，涵盖节点形状、连接线样式、子图、自定义样式及环境配置。"
 tags: [Markdown, Mermaid, 流程图, 图表, 可视化]
-category: Markdown
+category: 编程语言
 draft: false
 ---
 

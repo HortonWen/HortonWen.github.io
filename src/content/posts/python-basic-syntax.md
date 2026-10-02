@@ -3,7 +3,7 @@ title: "Python 基础语法全览"
 published: 2026-02-28
 description: "从变量、数据类型到控制流和异常处理，系统梳理 Python 基础语法的核心知识点，附带完整代码示例。"
 tags: [Python, 基础语法, 数据类型, 控制流, 异常处理, PEP8]
-category: Python
+category: 编程语言
 draft: false
 ---
 

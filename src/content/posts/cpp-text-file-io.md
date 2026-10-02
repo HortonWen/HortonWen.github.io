@@ -3,7 +3,7 @@ title: "C++ 文本文件操作：写文件与读文件"
 published: 2026-03-01
 description: "系统讲解 C++ 文本文件的写入与读取操作，涵盖文件流类、打开模式、四种读取方法及 getline 的使用细节，配合完整代码示例。"
 tags: [文件操作, ifstream, ofstream, fstream, 文本读写]
-category: C++
+category: 编程语言
 draft: false
 ---
 

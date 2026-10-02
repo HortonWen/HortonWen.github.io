@@ -3,7 +3,7 @@ title: "Linux 常用命令与虚拟机文件传输"
 published: 2026-08-03
 description: "Linux 日常高频命令速查手册，以及 VMware 虚拟机与 Windows 之间四种文件传输方法的实操步骤。"
 tags: [Linux, 命令行, VMware, 文件传输, SCP]
-category: Linux
+category: 机甲大师
 draft: false
 ---
 

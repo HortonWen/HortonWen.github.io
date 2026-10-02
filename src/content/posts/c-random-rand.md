@@ -3,7 +3,7 @@ title: "C 语言随机数 rand() 超全教程"
 published: 2026-07-21
 description: "从 rand() 和 srand() 的原理讲起，覆盖指定范围整数随机、浮点随机、常见踩坑点和万能模板，帮你彻底掌握 C 语言随机数生成。"
 tags: [rand, srand, 随机数, C语言, stdlib]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

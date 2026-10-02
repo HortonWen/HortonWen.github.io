@@ -3,7 +3,7 @@ title: "编写并编译你的第一个 LaTeX 文档"
 published: 2026-02-27
 description: "手把手带你完成第一个 LaTeX 文档的编写与编译，涵盖在线编辑器和本地 VS Code 两种方案，附中文支持和代码逐行解析。"
 tags: [LaTeX, 入门, VS Code, Overleaf, 编译]
-category: LaTeX
+category: 编程语言
 draft: false
 ---
 

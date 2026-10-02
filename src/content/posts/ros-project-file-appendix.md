@@ -3,7 +3,7 @@ title: "ROS 仿真项目文件结构附录"
 published: 2026-07-09
 description: "一个基于 ROS Noetic 和 Gazebo 的机器人仿真课程设计的完整文件路径清单，涵盖模型素材、catkin 工作空间、launch 文件和 URDF 描述。"
 tags: [ROS, Gazebo, catkin, 课程设计, 文件结构]
-category: ROS
+category: 机甲大师
 draft: false
 ---
 

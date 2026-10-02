@@ -3,7 +3,7 @@ title: "C 语言转义字符完整使用教程"
 published: 2026-07-21
 description: "从功能控制、符号转义到 ASCII 编码转义，系统讲解 C 语言全部转义字符的用法、使用场景和常见错误避坑点。"
 tags: [转义字符, C语言, 字符串, ASCII, printf]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "让小车模型在 Gazebo 中成功运行"
 published: 2026-07-03
 description: "从零搭建一个可在 Gazebo 中运行的差速驱动小车模型，涵盖 URDF/Xacro 编写、Gazebo 插件配置和启动文件创建。"
 tags: [Gazebo, URDF, Xacro, 差速驱动, ROS仿真]
-category: ROS
+category: 机甲大师
 draft: false
 ---
 

@@ -2,8 +2,8 @@
 title: "LaTeX 学习路线：从入门到专业排版的系统规划"
 published: 2026-02-27
 description: "一份系统化的 LaTeX 学习指南，按入门、进阶、高级三个阶段规划学习路径，附带推荐资源和常见问题解决方案。"
-tags: [LaTeX, 学习路线, 排版, 学术写作, 入门指南]
-category: LaTeX
+tags: [LaTeX, 学习路线, 排版 入门指南]
+category: 编程语言
 draft: false
 ---
 

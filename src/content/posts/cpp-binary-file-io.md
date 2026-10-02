@@ -3,7 +3,7 @@ title: "C++ 二进制文件操作全解"
 published: 2026-03-01
 description: "全面讲解 C++ 二进制文件的读写操作，包括二进制模式的必要性、read/write 函数的正确用法、结构体读写、文件大小获取、分块处理及常见陷阱。"
 tags: [二进制文件, read, write, ios_binary, 文件指针]
-category: C++
+category: 编程语言
 draft: false
 ---
 

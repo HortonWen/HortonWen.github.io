@@ -3,7 +3,7 @@ title: "C++ 多继承与菱形继承问题"
 published: 2026-02-26
 description: "讲解 C++ 多继承语法及同名成员的二义性问题，深入分析菱形继承导致的数据冗余和二义性，并演示虚继承的解决方案与底层原理。"
 tags: [多继承, 菱形继承, 虚继承, vbptr, 对象模型]
-category: C++
+category: 编程语言
 draft: false
 ---
 

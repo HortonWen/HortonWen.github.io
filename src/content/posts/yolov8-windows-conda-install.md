@@ -3,7 +3,7 @@ title: "YOLOv8 在 Windows 下的 Conda 完整安装教程"
 published: 2026-07-06
 description: "从零搭建 YOLOv8 Windows 开发环境：涵盖 Conda 虚拟环境创建、PyTorch GPU/CPU 安装、Ultralytics 包部署及常见报错修复，三种安装方式任选。"
 tags: [YOLOv8, Ultralytics, Conda, PyTorch, Windows, 环境配置]
-category: 计算机视觉
+category: 机甲大师
 draft: false
 ---
 

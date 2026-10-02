@@ -3,7 +3,7 @@ title: "ROS Noetic 安装与配置指南"
 published: 2026-07-06
 description: "在 Ubuntu 20.04 上安装 ROS Noetic Desktop-Full 的完整流程，包括软件源配置、rosdep 初始化及国内网络问题的解决方案。"
 tags: [ROS, Noetic, Ubuntu, rosdep, 开发环境]
-category: ROS
+category: 机甲大师
 draft: false
 ---
 

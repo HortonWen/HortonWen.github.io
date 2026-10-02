@@ -3,7 +3,7 @@ title: "C++ 分文件编写指南"
 published: 2026-03-09
 description: "详解 C++ 分文件编写的标准流程，包括头文件声明、源文件实现、主函数调用和 Visual Studio 操作步骤，以及常见错误的解决方法。"
 tags: [分文件编写, 头文件, 源文件, 编译, 项目结构]
-category: C++
+category: 编程语言
 draft: false
 ---
 

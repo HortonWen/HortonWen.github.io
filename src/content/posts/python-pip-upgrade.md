@@ -3,7 +3,7 @@ title: "Python pip 升级完全指南"
 published: 2026-02-28
 description: "系统梳理 pip 的升级方法，涵盖各操作系统命令、国内镜像加速、常见报错解决方案及最佳实践建议。"
 tags: [pip, 包管理, Python环境, 镜像源, 虚拟环境]
-category: Python
+category: 编程语言
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "C++ 课程设计核心代码解析（一）：结构体与本地文件�
 published: 2026-04-04
 description: "拆解 Rolex 职位申请系统的多文件版本核心代码，从 CMake 构建配置到结构体定义、输入模块、处理模块、输出模块，逐一讲解设计思路与实现细节。"
 tags: [课程设计, C++, 结构体, 文件IO, CMake, 模块化]
-category: C++
+category: 编程语言
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "C 语言字符串知识点系统总结"
 published: 2026-08-01
 description: "从字符串的本质和定义方式讲起，覆盖输入输出、常用函数、指针与数组的区别、动态字符串和高频易错点，适合复习和查漏补缺。"
 tags: [字符串, C语言, string.h, 指针, strlen]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

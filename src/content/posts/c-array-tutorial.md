@@ -3,7 +3,7 @@ title: "C 语言数组全解：作为函数形参与二维数组"
 published: 2026-07-30
 description: "系统讲解 C 语言数组作为函数参数的三种写法、退化机制与 const 保护，以及二维数组的定义、遍历、动态分配和作为形参的规则。"
 tags: [数组, 函数形参, 二维数组, C语言, 指针]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

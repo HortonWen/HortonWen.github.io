@@ -3,7 +3,7 @@ title: "Python 入门：从起源到第一个程序"
 published: 2026-02-28
 description: "介绍 Python 语言的起源、核心特点与主要应用领域，并提供从安装到运行第一个程序的完整入门指南。"
 tags: [Python, 入门, 编程语言, 环境搭建, Hello World]
-category: Python
+category: 编程语言
 draft: false
 ---
 

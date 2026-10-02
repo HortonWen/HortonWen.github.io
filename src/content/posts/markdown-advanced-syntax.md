@@ -3,7 +3,7 @@ title: "Markdown 进阶语法：表格、脚注与 HTML 混排"
 published: 2026-02-24
 description: "在基础语法之上，介绍 Markdown 的扩展功能：脚注、任务列表、定义列表、上下标以及混合 HTML/CSS 实现精细排版控制。"
 tags: [Markdown, 进阶语法, 脚注, 任务列表, HTML混排]
-category: Markdown
+category: 编程语言
 draft: false
 ---
 

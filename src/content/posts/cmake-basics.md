@@ -3,7 +3,7 @@ title: "CMake 入门笔记"
 published: 2026-07-21
 description: "从零掌握 CMake 核心语法：版本声明、项目定义、变量操作、条件判断、编译选项配置，附可直接运行的 C 语言 UTF-8 工程模板与中文乱码解决方案。"
 tags: [CMake, C语言, CLion, MinGW, 构建系统, UTF-8]
-category: 开发工具
+category: 机甲大师
 draft: false
 ---
 

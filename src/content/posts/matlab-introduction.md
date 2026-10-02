@@ -3,7 +3,7 @@ title: "MATLAB 入门：从环境搭建到学习路线"
 published: 2026-02-27
 description: "介绍 MATLAB 的核心特性与安装流程，提供基础语法速览、六阶段学习路线和高效学习建议，帮助初学者快速上手。"
 tags: [MATLAB, 入门, 科学计算, 环境搭建, 学习路线]
-category: MATLAB
+category: 编程语言
 draft: false
 ---
 

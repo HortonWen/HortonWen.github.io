@@ -3,7 +3,7 @@ title: "STM32 入门：教程资源与开发环境"
 published: 2026-07-24
 description: "记录 STM32 入门的教程资源与开发环境：B 站 keysking 的 STM32 教程系列与配套文档、开发板，以及 STM32CubeMX + Keil μ5 与 STM32CubeIDE 两条环境路线。"
 tags: [STM32, 入门, STM32CubeMX, Keil, STM32CubeIDE]
-category: STM32
+category: 机甲大师
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "C 语言基础：关键字、进制与字节"
 published: 2026-07-21
 description: "从 C++ 过渡到 C 语言的核心差异，系统梳理 C 语言全部关键字、三种进制书写方式以及 short/long/long long 等整型类型的用法与占位符。"
 tags: [C语言, 关键字, 进制, 字节, 数据类型, C++过渡]
-category: C 语言
+category: 编程语言
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "VS Code 配置 g++ 编译任务完整指南"
 published: 2026-04-11
 description: "从零配置 VS Code 的 g++ 编译环境，包括命令行编译、tasks.json 一键编译配置和运行方法，适用于 Windows/Linux/macOS 多平台 C++ 项目。"
 tags: [VS Code, g++, CMake, C++, 编译配置]
-category: 开发工具
+category: 机甲大师
 draft: false
 ---
 
