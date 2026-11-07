@@ -56,6 +56,38 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://github.com/SiriusFzh/NovaForge",
 		tags: ["资源", "开源"],
 	},
+	{
+		id: 6,
+		title: "机甲大师开源资源目录",
+		imgurl: "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+		desc: "RoboMaster 开源资源目录：汇总战队 / 个人 / DJI 官方 / 第三方公司的代码、图纸与项目（GitHub + Gitee + RM 论坛），SEU-CX-RM-Solaris 组织维护。",
+		siteurl: "https://github.com/SEU-CX-RM-Solaris/rm-open-source-leaderboard",
+		tags: ["战队", "资源"],
+	},
+	{
+		id: 7,
+		title: "Solaris 战队主页",
+		imgurl: "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+		desc: "东南大学成贤学院 Solaris 机甲大师战队主页仓库，27 赛季目标 RMUL 步兵 1v1。",
+		siteurl: "https://github.com/SEU-CX-RM-Solaris/solaris-rm",
+		tags: ["战队", "主页"],
+	},
+	{
+		id: 8,
+		title: "Solaris 终端横幅合集",
+		imgurl: "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+		desc: "SEU CXXY 终端横幅合集：SOLARIS 战队、计算机协会与天文爱好者协会的 TrueColor ASCII banners，纯 bash / PowerShell 实现。",
+		siteurl: "https://github.com/SEU-CX-RM-Solaris/solaris-fetch",
+		tags: ["战队", "工具"],
+	},
+	{
+		id: 9,
+		title: "Solaris 战队技术博客",
+		imgurl: "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+		desc: "东南大学成贤学院 RoboMaster 天钺（Solaris）战队技术博客，基于 Shirone 主题，含同济大学招新培训四组笔记。",
+		siteurl: "https://github.com/SEU-CX-RM-Solaris/solaris-blog-rm-seu-cxxy",
+		tags: ["战队", "博客"],
+	},
 ];
 
 // 获取所有友情链接数据（稳定顺序，测试可复现）
